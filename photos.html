@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nos Photos - BOUTIQUE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: 
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url('kett.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;}
+{
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      color: #004080;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+      user-select: none;
+    }
+
+    /* Galerie photos */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .photo-description {
+      padding: 15px 20px;
+      font-size: 1rem;
+      color: #555;
+      flex-grow: 1;
+    }
+
+    /* Bouton d'achat */
+    .buy-btn {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0 0 12px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #0066cc;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .photo-card img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Produits en Images</h1>
+
+  <div class="gallery">
+
+    <div class="photo-card" onclick="alert('Produit 1 ajouté au panier !')">
+      <img src="sac.jpeg" alt="Produit 1" />
+      <div class="photo-description">
+        Sac à main élégant, cuir véritable, parfait pour toutes occasions.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 2 ajouté au panier !')">
+      <img src="montre.jpeg" alt="Produit 2" />
+      <div class="photo-description">
+        Montre design moderne, étanche, idéale pour un style chic et sportif.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 3 ajouté au panier !')">
+      <img src="ket.avif" alt="Produit 3" />
+      <div class="photo-description">
+        Chaussures confortables, fabriquées avec matériaux durables et élégants.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 4 ajouté au panier !')">
+      <img src="lunette.jpeg" alt="Produit 4" />
+      <div class="photo-description">
+        Lunettes de soleil tendance, protection UV, parfaites pour l'été.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 5 ajouté au panier !')">
+      <img src="veste.jpg" alt="Produit 5" />
+      <div class="photo-description">
+        Veste légère et élégante, parfaite pour toutes saisons.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 6 ajouté au panier !')">
+      <img src="sac au dos.webp" alt="Produit 6" />
+      <div class="photo-description">
+        Sac à dos robuste, idéal pour les voyages et le quotidien.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 7 ajouté au panier !')">
+      <img src="parfum.webp" alt="Produit 7" />
+      <div class="photo-description">
+        Parfum exclusif, senteur fraîche et durable.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 8 ajouté au panier !')">
+      <img src="pied.jpeg" alt="Produit 8" />
+      <div class="photo-description">
+        Chaussures de sport légères et respirantes.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 9 ajouté au panier !')">
+      <img src="classic.webp" alt="Produit 9" />
+      <div class="photo-description">
+        Montre classique, parfaite pour les événements formels.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 10 ajouté au panier !')">
+      <img src="po.jpeg" alt="Produit 10" />
+      <div class="photo-description">
+        Casquette stylée pour un look décontracté.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 11 ajouté au panier !')">
+      <img src="chem.jpeg" alt="Produit 11" />
+      <div class="photo-description">
+        Chemise chic en coton bio, confortable et élégante.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 12 ajouté au panier !')">
+      <img src="pantalon.jpg" alt="Produit 12" />
+      <div class="photo-description">
+        Pantalon décontracté, parfait pour le quotidien.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 13 ajouté au panier !')">
+      <img src="echarper.jpg" alt="Produit 13" />
+      <div class="photo-description">
+        Écharpe douce, idéale pour les saisons fraîches.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 14 ajouté au panier !')">
+      <img src="kett.jpg" alt="Produit 14" />
+      <div class="photo-description">
+        Baskets tendance, confortables et stylées.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 15 ajouté au panier !')">
+      <img src="montresport.jpg" alt="Produit 15" />
+      <div class="photo-description">
+        Montre sportive avec fonction chronomètre.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 16 ajouté au panier !')">
+      <img src="images.jpeg" alt="Produit 16" />
+      <div class="photo-description">
+        Sac de soirée élégant, parfait pour les occasions spéciales.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 17 ajouté au panier !')">
+      <img src="femme.jpg" alt="Produit 17" />
+      <div class="photo-description">
+        Veste imperméable, idéale pour toutes conditions météorologiques.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 18 ajouté au panier !')">
+      <img src="lunettes-1.jpg" alt="Produit 18" />
+      <div class="photo-description">
+        Lunettes de vue stylées et légères.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 19 ajouté au panier !')">
+      <img src="pull.jpg" alt="Produit 19" />
+      <div class="photo-description">
+        Pull chaud et confortable en laine mérinos.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+    <div class="photo-card" onclick="alert('Produit 20 ajouté au panier !')">
+      <img src="montre connectée.jpg" alt="Produit 20" />
+      <div class="photo-description">
+        Montre connectée avec suivi santé et notifications.
+      </div>
+      <button class="buy-btn">Acheter</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

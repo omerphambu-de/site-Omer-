@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Points de Vente - BOUTIQUE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+
+  margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: 
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url('kett.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;}
+
+    h1 {
+      color: #0073e6;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      user-select: none;
+      text-align: center;
+    }
+
+    .points-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .point-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .point-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .point-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #004080;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #0073e6;
+      padding-bottom: 6px;
+      user-select: none;
+    }
+
+    .point-address {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .point-contact {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    .map-container {
+      margin-top: 15px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 180px;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .point-card {
+        padding: 20px;
+      }
+
+      .map-container {
+        height: 150px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Points de Vente</h1>
+
+  <div class="points-container">
+
+    <div class="point-card">
+      <div class="point-title">Boutique Centrale - Boma</div>
+      <div class="point-address">Avenue des Acacias, Boma, RDC</div>
+      <div class="point-contact">Téléphone : +243 812 345 678</div>
+      <div class="point-contact">Email : boma@boutique.com</div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.1234567890123!2d13.0152!3d-5.8557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a55fbd0f2e96c3d%3A0x4b654b1e8cb3ee9a!2sBoma%2C%20RD%20Congo!5e0!3m2!1sfr!2scd!4v1234567890"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="point-card">
+      <div class="point-title">Boutique Kinshasa</div>
+      <div class="point-address">Quartier Gombe, Kinshasa, RDC</div>
+      <div class="point-contact">Téléphone : +243 812 987 654</div>
+      <div class="point-contact">Email : kinshasa@boutique.com</div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.1234567890123!2d15.2866!3d-4.325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a7a045f2156123d%3A0x12cb124012f01234!2sGombe%2C%20Kinshasa%2C%20RD%20Congo!5e0!3m2!1sfr!2scd!4v1234567890"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="point-card">
+      <div class="point-title">Boutique Lubumbashi</div>
+      <div class="point-address">Avenue des Huileries, Lubumbashi, RDC</div>
+      <div class="point-contact">Téléphone : +243 812 123 456</div>
+      <div class="point-contact">Email : lubumbashi@boutique.com</div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1234567890123!2d27.4763!3d-11.6782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19402c7b1234567d%3A0x1b3c1234567890abc!2sLubumbashi%2C%20RD%20Congo!5e0!3m2!1sfr!2scd!4v1234567890"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+<br>
+<b>
+<b>
+  <footer>
+    &copy; 2025 BOUTIQUE - Tous droits réservés
+  </footer>
+<b>
+<b>
+<b>
+</body>
+</html>

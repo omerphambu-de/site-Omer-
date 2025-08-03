@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>BOUTIQUE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+     body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(255,255,255,0.30), rgba(255,255,255,0.30)),
+              url('image.avif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      background-color: #333;
+      padding: 12px;
+    }
+
+    .menu a {
+      background-color: #ff4d4d;
+      color: white;
+      font-weight: bold;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #cc0000;
+    }
+
+    /* Animation verticale */
+    @keyframes verticalBounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      background-color: #4da6ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin: 20px 0;
+      animation: verticalBounce 3s ease-in-out infinite;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .colonne {
+      width: 30%;
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid #3399ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    .col1 {
+      background-color: #e6ffe6;
+    }
+
+    .col2 {
+      background-color: #ffe6e6;
+    }
+
+    .col3 {
+      background-color: #ffffe6;
+    }
+
+    .vertical-col {
+      background-color: white;
+      border: 2px solid #4da6ff;
+      border-radius: 12px;
+      margin: 30px auto;
+      width: 90%;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .vertical-col h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <a href="partenaire.html">PARTENAIRES</a>
+    <a href="photos.html">NOS PHOTOS</a>
+    <a href="produits.html">PRODUITS</a>
+    <a href="points.html">POINTS DE VENTE</a>
+  </div>
+
+  <h1>BOUTIQUE</h1>
+
+  <div class="columns">
+    <div class="colonne col1">
+      <strong>NOS ACTIVITÉS</strong><br><br>
+      BOUTIQUE présente ses activités :
+      <ul>
+        <li>PRODUCTION</li>
+        <li>VENTE</li>
+        <li>PUBLICATION</li>
+        <li>COMMUNICATION</li>
+        <li>CRÉATIVITÉ</li>
+      </ul>
+    </div>
+
+    <div class="colonne col2">
+      <strong>AVEC QUI NOUS TRAVAILLONS</strong><br><br>
+      Notre BOUTIQUE travaille en partenariat avec :
+      <ol>
+        <li>NIKE</li>
+        <li>ZARA</li>
+        <li>LOUIS VUITTON</li>
+        <li>CHICAGO</li>
+        <li>HERMÈS</li>
+        <li>PUMA</li>
+      </ol>
+    </div>
+
+    <div class="colonne col3">
+      <strong>VALEURS ET OBJECTIFS</strong><br><br>
+      Notre boutique vise à :
+      <ul>
+        <li>Satisfaire les clients</li>
+        <li>Promouvoir la qualité</li>
+        <li>Encourager la créativité locale</li>
+        <li>Respecter l'environnement</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="vertical-col">
+    <h3>INFO GÉNÉRAL</h3>
+    <p><strong>CONTACT :</strong></p>
+    <p>Téléphone : +243 0904649754</p>
+    <p>Email : contact@boutique.com</p>
+    <p>Facebook: Boutiqualité</p>
+    <p>WhatsApp: 0859760507</p>
+    <p>Adresse : Boma, RDC</p>
+  </div>
+
+</body>
+</html>

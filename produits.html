@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Produits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: 
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url('kett.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #333;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      margin: 10px auto 0;
+      background: goldenrod;
+      border-radius: 3px;
+    }
+
+    .produit-galerie {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .produit {
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .produit:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .produit img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .produit p {
+      margin-top: 12px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .prix {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Produits</h1>
+
+  <section class="produit-galerie">
+
+    <div class="produit">
+      <img src="rouge.jpg" alt="Produit Rouge">
+      <p>T-shirt Nike</p>
+      <div class="prix">15 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="parfum.webp" alt="Produit Parfum">
+      <p>Parfum de Luxe</p>
+      <div class="prix">30 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="kett.jpg" alt="Chaussure Homme">
+      <p>Chaussure Homme</p>
+      <div class="prix">45 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="robe.jpeg" alt="Robe élégante">
+      <p>Robe Élégante</p>
+      <div class="prix">25 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="images.jpeg" alt="Sac à main">
+      <p>Sac à Main</p>
+      <div class="prix">20 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="casque.jpg" alt="Casque Bluetooth">
+      <p>Casque Bluetooth</p>
+      <div class="prix">18 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="sam.avif" alt="Smartphone Android">
+      <p>Smartphone Android</p>
+      <div class="prix">150 000 FC</div>
+    </div>
+
+    <div class="produit">
+      <img src="montre connectée.jpg" alt="Montre connectée">
+      <p>Montre Connectée</p>
+      <div class="prix">35 000 FC</div>
+    </div>
+
+  </section>
+
+</body>
+</html>

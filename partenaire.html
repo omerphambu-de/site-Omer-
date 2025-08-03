@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nos Partenaires</title>
+  <style>
+     * {
+      box-sizing: border-box;
+   body {
+  margin: 0;
+  margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: 
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url('kett.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;}
+}
+    h1 {
+      color: #0056b3;
+      margin-bottom: 40px;
+      font-size: 2.8rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .partner-card {
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      min-height: 320px;
+    }
+    .partner-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    .partner-logo {
+      max-width: 120px;
+      filter: grayscale(30%);
+      transition: filter 0.3s ease;
+    }
+    .partner-card:hover .partner-logo {
+      filter: none;
+    }
+    .partner-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #004080;
+    }
+    .partner-comment {
+      font-size: 0.9rem;
+      color: #222;
+      flex-grow: 1;
+      padding: 0 10px;
+      text-align: justify;
+    }
+
+    /* Couleurs différentes pour chaque partenaire */
+    .nike { background-color: #f0f8ff; }
+    .zara { background-color: #fff0f5; }
+    .lv { background-color: #f5f5dc; }
+    .chicago { background-color: #e0ffe0; }
+    .hermes { background-color: #ffe4b5; }
+    .puma { background-color: #f0ffff; }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #444;
+      background: rgba(255,255,255,0.8);
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Partenaires</h1>
+
+  <div class="partners-grid">
+    <div class="partner-card nike" onclick="window.open('https://www.nike.com', '_blank')">
+      <img src="nike.png" alt="Nike" class="partner-logo" />
+      <div class="partner-name">NIKE</div>
+      <div class="partner-comment">Leader mondial dans les articles de sport, Nike allie innovation et performance pour tous les athlètes.</div>
+    </div>
+    <div class="partner-card zara" onclick="window.open('https://www.zara.com', '_blank')">
+      <img src="Zara.png" alt="Zara" class="partner-logo" />
+      <div class="partner-name">ZARA</div>
+      <div class="partner-comment">Zara, une référence en mode rapide, propose des collections tendance à des prix accessibles.</div>
+    </div>
+    <div class="partner-card lv" onclick="window.open('https://www.louisvuitton.com', '_blank')">
+      <img src="luis.png" alt="Louis Vuitton" class="partner-logo" />
+      <div class="partner-name">LOUIS VUITTON</div>
+      <div class="partner-comment">Marque de luxe emblématique, Louis Vuitton symbolise l’élégance, la qualité et l’artisanat.</div>
+    </div>
+    <div class="partner-card chicago" onclick="window.open('https://www.chicago.com', '_blank')">
+      <img src="chigo.png" alt="Chicago" class="partner-logo" />
+      <div class="partner-name">CHICAGO</div>
+      <div class="partner-comment">Chicago est un partenaire local engagé à fournir des produits et services de qualité à notre communauté.</div>
+    </div>
+    <div class="partner-card hermes" onclick="window.open('https://www.hermes.com', '_blank')">
+      <img src="Hermes.png" alt="Hermès" class="partner-logo" />
+      <div class="partner-name">HERMÈS</div>
+      <div class="partner-comment">Maison de luxe française reconnue pour ses créations artisanales exceptionnelles et son élégance.</div>
+    </div>
+    <div class="partner-card puma" onclick="window.open('https://www.puma.com', '_blank')">
+      <img src="Puma.png" alt="Puma" class="partner-logo" />
+      <div class="partner-name">PUMA</div>
+      <div class="partner-comment">PUMA allie style et performance dans ses articles de sport innovants et dynamiques.</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BOUTIQUE - Tous droits réservés
+  </footer>
+
+</body>
+</html>
